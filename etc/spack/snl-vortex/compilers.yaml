@@ -1,0 +1,17 @@
+compilers:
+- compiler:
+    environment: {}
+    extra_rpaths:
+      - /usr/tce/packages/gcc/gcc-7.2.1-redhat/lib
+      - /usr/tce/packages/gcc/gcc-7.2.1-redhat/lib64
+      - /usr/tce/packages/gcc/gcc-7.2.1-redhat/libexec
+    flags: {}
+    modules: []
+    operating_system: rhel7
+    paths:
+      cc: /usr/tce/packages/gcc/gcc-7.2.1-redhat/bin/gcc
+      cxx: /usr/tce/packages/gcc/gcc-7.2.1-redhat/bin/g++
+      f77: /usr/tce/packages/gcc/gcc-7.2.1-redhat/bin/gfortran
+      fc: /usr/tce/packages/gcc/gcc-7.2.1-redhat/bin/gfortran
+    spec: gcc@7.2.1
+    target: ppc64le

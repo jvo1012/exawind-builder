@@ -37,6 +37,7 @@ details on how to use this to build ExaWind software.
 | `cori`              | [NERSC Cori](http://www.nersc.gov/users/computational-systems/cori/)               |
 | `summitdev`         | [OLCF SummitDev](https://www.olcf.ornl.gov/olcf-resources/compute-systems/summit/) |
 | `snl-waterman`.     | Sandia waterman computational cluster                                              |
+| `snl-vortex`.       | Sandia vortex computational cluster                                                |
 | `snl-waterman-atdm` | Sandia waterman cluster with system modules                                        |
 | `snl-ghost`         | Sandia Ghost computational cluster                                                 |
 | `snl-skybridge`     | Sandia Skybridge computational cluster                                             |

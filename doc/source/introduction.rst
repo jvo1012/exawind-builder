@@ -23,6 +23,7 @@ particular system.
   ``cori``              `NERSC Cori <http://www.nersc.gov/users/computational-systems/cori/>`_
   ``summitdev``         `OLCF SummitDev <https://www.olcf.ornl.gov/olcf-resources/compute-systems/summit/>`_
   ``snl-waterman``.     Sandia waterman cluster (also ``snl-waterman-atdm``)
+  ``snl-vortex``.       Sandia vortex cluster 
   ``snl-ghost``         Sandia Ghost cluster
   ``snl-skybridge``     Sandia Skybridge cluster
   ``snl-ascicgpu``      Sandia ASC GPU development machines
@@ -44,6 +45,7 @@ particular system.
   cori               intel
   summitdev          gcc, xl, cuda
   snl-waterman.      gcc, cuda
+  snl-vortex.        gcc, cuda
   snl-ghost          intel
   snl-skybridge      intel
   snl-ascicgpu       gcc, cuda
