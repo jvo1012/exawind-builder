@@ -119,6 +119,7 @@ exawind_cmake_base ()
             -DTrilinos_ENABLE_Gtest:BOOL=ON
             -DTrilinos_ENABLE_STKClassic:BOOL=OFF
             -DTrilinos_ENABLE_STKExprEval:BOOL=ON
+            -DTrilinos_ENABLE_STKBalance:BOOL=ON
             -DTrilinos_ENABLE_SEACASExodus:BOOL=ON
             -DTrilinos_ENABLE_SEACASEpu:BOOL=ON
             -DTrilinos_ENABLE_SEACASExodiff:BOOL=ON
