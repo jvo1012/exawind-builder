@@ -6,10 +6,10 @@ packages:
         - openmpi
     variants: +mpi build_type=Release
   openmpi:
-    version: [2.1.5]
+    version: [4.0.2]
     buildable: false
     modules:
-      openmpi@2.1.5: sierra-mpi/openmpi/2.1.5
+      openmpi@4.0.2: sierra-mpi/openmpi/4.0.2
   cmake:
     version: [3.12.2]
     buildable: false
@@ -20,14 +20,14 @@ packages:
       pkg-config@0.29.2: /usr/bin/pkg-config
     buildable: false
   cuda:
-    version: [9.2.148]
+    version: [10.1.243]
     buildable: false
     modules:
-      cuda@9.2.148: sierra-compiler/nvidia/9.2.148
+      cuda@10.1.243: sierra-compiler/nvidia/10.1.243
   python:
-    version: [3.6.3]
+    version: [3.6.10]
     modules:
-      python@3.6.3: sierra-python/3.6.3
+      python@3.6.10: sierra-python/3.6.10
     paths:
       python@2.7.10: /projects/sierra/linux_rh6/install/Python/2.7/
     buildable: false

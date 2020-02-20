@@ -31,7 +31,7 @@ packages:
   boost:
     version: [1.68.0]
   hdf5:
-    version: [1.10.4]
+    version: [1.10.6]
     variants: +mpi+cxx+hl
   netcdf:
     version: [4.7.1]
