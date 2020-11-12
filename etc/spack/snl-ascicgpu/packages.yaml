@@ -1,6 +1,7 @@
 packages:
   all:
-    compiler: [gcc]
+    compiler:
+      - gcc
     providers:
       mpi:
         - openmpi
@@ -8,39 +9,59 @@ packages:
   openmpi:
     version: [4.0.2]
     buildable: false
-    modules:
-      openmpi@4.0.2: sierra-mpi/openmpi/4.0.2
+    externals:
+      - spec: "openmpi@4.0.2%gcc"
+        modules:
+          - sierra-mpi/openmpi/4.0.2
+      - spec: "openmpi@4.0.3%gcc"
+        modules:
+          - sierra-mpi/openmpi/4.0.3
   cmake:
-    version: [3.12.2]
     buildable: false
-    modules:
-      cmake@3.12.2: sierra-cmake/3.12.2
+    externals:
+      - spec: "cmake@3.12.2%gcc"
+        modules:
+          - sierra-cmake/3.12.2
   pkg-config:
-    paths:
-      pkg-config@0.29.2: /usr/bin/pkg-config
     buildable: false
+    externals:
+      - spec: "pkg-config@0.29.2%gcc"
+        prefix: /usr/bin/pkg-config
   hdf5:
     version: [1.10.6]
     variants: +mpi+cxx+hl~shared
   cuda:
-    version: [9.2.148]
+    version: [10.1.243]
     buildable: false
-    modules:
-      cuda@9.2.148: sierra-compiler/nvidia/9.2.148
+    externals:
+      - spec: "cuda@9.2.148%gcc"
+        modules: 
+          - sierra-compiler/nvidia/10.1.243
+      - spec: "cuda@10.1.243%gcc"
+        modules: 
+          - sierra-compiler/nvidia/10.1.243
+      - spec: "cuda@10.2.89%gcc"
+        modules: 
+          - sierra-compiler/nvidia/10.2.89
   python:
     version: [3.6.10]
-    modules:
-      python@3.6.10: sierra-python/3.6.10
-    paths:
-      python@2.7.10: /projects/sierra/linux_rh6/install/Python/2.7/
     buildable: false
+    externals:
+      - spec: "python@3.6.10"
+        modules: 
+          - sierra-python/3.6.10
+      - spec: "python@2.7.10"
+        modules: 
+          - /projects/sierra/linux_rh6/install/Python/2.7/
   zlib:
     version: [1.2.5]
     buildable: false
-    paths: 
-      zlib@1.2.5: /usr/
+    externals:
+      - spec: "zlib@1.2.5%gcc"
+        prefix: /usr/
   bzip2:
     version: [1.6.0]
     buildable: false
-    paths:
-      bzip2@1.6.0: /usr/
+    externals:
+      - spec: "bzip2@1.6.0%gcc"
+        prefix: /usr/
